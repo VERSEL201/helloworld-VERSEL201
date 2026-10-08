@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的第一个AI开发的网站</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: clamp(22px, 4vw, 42px);
+      margin-bottom: 30px;
+      line-height: 1.5;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    .time-box {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+      padding: 16px 32px;
+      backdrop-filter: blur(8px);
+      font-size: clamp(16px, 2.5vw, 24px);
+      letter-spacing: 1px;
+    }
+    .time-box .label {
+      display: block;
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 6px;
+    }
+    .time-box .value {
+      font-weight: bold;
+      font-variant-numeric: tabular-nums;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello World！我是【versel201】，我的第一个AI开发的网站</h1>
+  <div class="time-box">
+    <span class="label">当前服务器时间</span>
+    <span class="value" id="server-time">{{SERVER_TIME}}</span>
+  </div>
+</body>
+</html>
